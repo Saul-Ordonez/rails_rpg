@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @enemy.name %>
+</p>
+
+<p>
+  <strong>Hp:</strong>
+  <%= @enemy.hp %>
+</p>
+
+<p>
+  <strong>Damage:</strong>
+  <%= @enemy.damage %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @enemy.location %>
+</p>
+
+<%= link_to 'Edit', edit_enemy_path(@enemy) %> |
+<%= link_to 'Back', enemies_path %>
