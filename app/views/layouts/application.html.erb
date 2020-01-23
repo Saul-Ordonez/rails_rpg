@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Rpg</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <title>Rpg</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
 
-  <body>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Welcome to the <br><strong>Space Marine Fighter Battle Death Match</strong><br>RPG</h1>
+    </div>
+
+    <%= flash[:alert] %>
+    <%= flash[:notice] %>
+
     <%= yield %>
-  </body>
+
+  </div>
+
+</body>
 </html>

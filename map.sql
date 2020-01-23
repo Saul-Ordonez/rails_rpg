@@ -72,10 +72,10 @@ COPY public.locations (id, room, description, created_at, updated_at, door) FROM
 2	Airlock	Here you enter..	2020-01-22 21:51:46.994197	2020-01-22 21:51:46.994197	1,3,5
 3	Hallway	It's a hall!	2020-01-22 21:52:25.640531	2020-01-22 21:52:25.640531	2,6
 4	Mess Hall	Chairs and rotten food...	2020-01-22 21:53:32.768617	2020-01-22 21:53:32.768617	1,7,8,9
-5	Floating in space	You dead	2020-01-22 21:54:37.137914	2020-01-22 21:54:37.137914	
+5	Floating in space	You dead	2020-01-22 21:54:37.137914	2020-01-22 21:54:37.137914
 6	Crew Quarters	Bunk beds and dirty clothes	2020-01-22 21:55:59.840355	2020-01-22 21:55:59.840355	3,10,11
 7	Med Lab	I don't know what any of this does...	2020-01-22 21:58:04.296816	2020-01-22 21:58:04.296816	4,12
-8	Floating in space	You dead	2020-01-22 21:58:26.864201	2020-01-22 21:58:26.864201	
+8	Floating in space	You dead	2020-01-22 21:58:26.864201	2020-01-22 21:58:26.864201
 9	Engine Room	Loud and hot	2020-01-22 21:59:07.081673	2020-01-22 21:59:07.081673	4,12,13
 10	Capitan's Quarters	Fancy!	2020-01-22 21:59:42.097035	2020-01-22 21:59:42.097035	6
 11	Shower Room	Not really the time for a shower	2020-01-22 22:00:23.481581	2020-01-22 22:00:23.481581	6
@@ -103,4 +103,3 @@ ALTER TABLE ONLY public.locations
 --
 -- PostgreSQL database dump complete
 --
-

@@ -1,4 +1,5 @@
 class EnemiesController < ApplicationController
+  before_action :authorize
   before_action :set_enemy, only: [:show, :edit, :update, :destroy]
 
   # GET /enemies

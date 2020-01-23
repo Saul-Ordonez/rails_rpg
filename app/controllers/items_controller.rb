@@ -1,4 +1,5 @@
 class ItemsController < ApplicationController
+  before_action :authorize
   before_action :set_item, only: [:show, :edit, :update, :destroy]
 
   # GET /items
@@ -13,6 +14,7 @@ class ItemsController < ApplicationController
   # GET /items/new
   def new
     @item = Item.new
+    @locations = Location.all
   end
 
   # GET /items/1/edit
@@ -22,7 +24,6 @@ class ItemsController < ApplicationController
   # POST /items
   def create
     @item = Item.new(item_params)
-
     if @item.save
       redirect_to @item, notice: 'Item was successfully created.'
     else
@@ -53,6 +54,6 @@ class ItemsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def item_params
-      params.require(:item).permit(:name, :effect, :value)
+      params.require(:item).permit(:name, :effect, :value, :imageable_type, :imageable_id)
     end
 end

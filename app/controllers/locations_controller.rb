@@ -1,4 +1,5 @@
 class LocationsController < ApplicationController
+  before_action :authorize, only: [:index, :new, :edit, :create, :update, :destroy]
   before_action :set_location, only: [:show, :edit, :update, :destroy]
 
   # GET /locations
@@ -8,6 +9,8 @@ class LocationsController < ApplicationController
 
   # GET /locations/1
   def show
+    @enemies = Enemy.by_location(params[:id])
+
   end
 
   # GET /locations/new

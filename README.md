@@ -21,4 +21,4 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+* $ psql rpg_development < map.sql $ to populate map

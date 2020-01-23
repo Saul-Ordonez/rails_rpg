@@ -26,6 +26,14 @@
     <%= form.number_field :value %>
   </div>
 
+  <input type="hidden" name="item[imageable_type]" value="Location">
+
+
+  <div class="field">
+    <%= form.label :location_id %>
+    <%= form.number_field :imageable_id %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
